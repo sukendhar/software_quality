@@ -1,0 +1,11 @@
+<p>Welcome <%= @resource.email %>!</p>
+
+<p>We're pleased to invite you to try <%= link_to 'softwarequalitycraft.com', root_url %>.</p>
+
+<p><strong>To learn more about technologies that we need to support, please take this 
+survey: <a href="http://softwarequalitycraft.herokuapp.com/surveys">survey</a>
+</strong></p>
+
+<p>Please click the link below to confirm your email address and set your password:</p>
+
+<p><%= link_to 'Confirm my account', confirmation_url(@resource, :confirmation_token => @resource.confirmation_token) %></p>

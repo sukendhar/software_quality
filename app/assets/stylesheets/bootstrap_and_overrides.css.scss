@@ -1,0 +1,113 @@
+// Set the correct sprite paths
+$iconSpritePath: asset-url('glyphicons-halflings.png', image);
+$iconWhiteSpritePath: asset-url('glyphicons-halflings-white.png', image);
+@import "bootstrap";
+body { padding-top: 60px; }
+@import "bootstrap";
+@import "bootstrap-responsive";
+
+.content {
+  background-color: #fff;
+  padding: 20px;
+  margin: 0 -40px; /* negative indent the amount of the padding to maintain the grid system */
+  -webkit-border-radius: 0 0 6px 6px;
+  -moz-border-radius: 0 0 6px 6px;
+  border-radius: 0 0 6px 6px;
+  -webkit-box-shadow: 0 1px 2px rgba(0,0,0,.15);
+  -moz-box-shadow: 0 1px 2px rgba(0,0,0,.15);
+  box-shadow: 0 1px 2px rgba(0,0,0,.15);
+}
+
+.content {
+}
+
+#welcome {
+  text-align: center;
+  
+  .hero-unit {
+    background: url(../assets/bg.png);    
+    padding: 40px;
+  }
+  
+  h1 {
+    margin-bottom: 40px;
+  }
+  
+  #request-invite {
+    padding-top: 20px;
+    
+    h1 {
+      color: #51A351;
+      margin-bottom: 0;
+    }
+    
+    .alert-error {
+      position: relative;
+      top: -15px;
+      margin-bottom: 0;
+    }
+  }
+  
+  .help-block {
+    font-size: 10px;
+    color: gray;
+    margin-top: 15px;
+  }
+  
+  #well {
+    margin-left: 0px;
+    text-align: left;
+  }
+  
+  .span4 {
+    label {
+      font-size: 16px;
+      font-weight: bold;
+      color: #0073CC;
+      position: relative;
+      top: -15px;
+    }
+    &.text_only {
+      margin-top: 5px;
+    }
+  }
+  
+  #thanks {
+    position: relative;
+    top: -5px;
+    left: 5px;
+  }
+}
+
+/*AJAX 'loading' indication on buttons */
+.btn.loading {
+    background-image: -webkit-gradient(linear, 0 0, 100% 100%,
+        color-stop(.25, rgba(0, 0, 0, .10)), 
+        color-stop(.25, transparent),
+        color-stop(.5, transparent), 
+        color-stop(.5, rgba(0, 0, 0, .10)),
+        color-stop(.75, rgba(0, 0, 0, .10)), 
+        color-stop(.75, transparent), 
+        to(transparent));
+    background-image: 
+        -moz-linear-gradient(-45deg, 
+            rgba(0, 0, 0, .10) 25%, 
+            transparent 25%,
+            transparent 50%, rgba(0, 0, 0, .10) 50%, 
+            rgba(0, 0, 0, .10) 75%, 
+            transparent 75%, transparent
+        );
+    background-size: 50px 50px;
+    -moz-background-size: 50px 50px;
+    -webkit-background-size: 50px 50px;
+    -webkit-animation: animate-stripes 2s linear infinite;
+}
+
+@-webkit-keyframes animate-stripes {
+    from {
+        background-position: 0 0;
+    } 
+    to {
+       background-position: -50px 0;
+    }
+}

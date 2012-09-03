@@ -1,0 +1,5 @@
+echo ../rails-prelaunch-signup-1click/$1 ../SoftwareQualityCraft/$1
+#diff ../rails-prelaunch-signup-1click/$1 ../SoftwareQualityCraft/$1
+#wc ../rails-prelaunch-signup-1click/$1 ../SoftwareQualityCraft/$1
+
+sdiff -s -w120 ../rails-prelaunch-signup-1click/$1 ../SoftwareQualityCraft/$1 |cat -ev
